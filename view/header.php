@@ -11,7 +11,7 @@ session_start();
 <link rel="stylesheet" href="css/c.css">
 <script src="./model/js/js.js"></script>
 </head>
-<body>
+<body onload ="onLoadFunctions();">
 <header>
 <a href="."><img src="images/byu.png" alt="BYU-Idaho logo"></a>
 </header>

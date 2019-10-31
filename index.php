@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 require("model/php/user_data.php"); 
 $_SESSION["ip"] = getIP();
@@ -21,7 +22,13 @@ switch($action) {
 		break;
 	case 'JSONParse, Stringify':
 		include("tests/JSONParse, Stringify/index.php");
-		break;	
+		break;
+	case 'HTML5 Tags - Video, Audio, and Canvas':
+		include("tests/HTML5 Tags - Video, Audio, and Canvas/index.php");
+		break;
+	case 'Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events':
+		include("tests/Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events/index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

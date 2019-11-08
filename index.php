@@ -29,6 +29,9 @@ switch($action) {
 	case 'Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events':
 		include("tests/Standard JavaScript Events Including those for Mobile Devices and Animation and Transition Events/index.php");
 		break;
+	case 'Object Creation Functions, Inheritance, Properties, Methods, Instantiation':
+		include("tests/Object Creation Functions, Inheritance, Properties, Methods, Instantiation/index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

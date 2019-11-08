@@ -32,6 +32,9 @@ switch($action) {
 	case 'Object Creation Functions, Inheritance, Properties, Methods, Instantiation':
 		include("tests/Object Creation Functions, Inheritance, Properties, Methods, Instantiation/index.php");
 		break;
+	case 'XMLHTTPRequest to Consume a JSON Web Service':
+		include("tests/XMLHTTPRequest to Consume a JSON Web Service/index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

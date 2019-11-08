@@ -63,4 +63,4 @@ If you click the button below, the transtion effect will be applied to the squar
 
 
 
-<?php include("./view/footer.php"); ?>
+<?php include("view/footer.php"); ?>

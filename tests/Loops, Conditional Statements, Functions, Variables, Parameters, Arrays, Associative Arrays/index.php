@@ -103,4 +103,4 @@ myArray["lastName"] = "Wick";
 
 </div>
 </div><br><br>
-<?php include("./view/footer.php"); ?>
+<?php include("view/footer.php"); ?>

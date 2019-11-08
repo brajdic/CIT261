@@ -46,4 +46,4 @@ Your browser does not support the HTML5 canvas tag. :/</canvas>
 
 
 
-<?php include("./view/footer.php"); ?>
+<?php include("view/footer.php"); ?>

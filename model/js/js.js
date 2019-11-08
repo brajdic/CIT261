@@ -71,6 +71,29 @@ function testObjFunc() {
 	document.getElementById("testObjManufacturer").innerHTML = "The manufacturer of the phone is: " + phone.manufacturer; 
 	document.getElementById("testObjType").innerHTML = "The type of the phone is: " + phone.type; 
 }
+function testCatFact() {
+	let req = new XMLHttpRequest();
+	let url = 'http://emma.wtf/facts/catFacts/';
+	req.responseType = 'json';
+	req.open('GET', url, true);
+	req.onload  = function() {
+	let res = req.response;
+		document.getElementById("catFact").innerHTML = res.fact;
+	};
+	req.send(null);
+}
+
+function testRandomFact() {
+	let req = new XMLHttpRequest();
+	let url = 'https://uselessfacts.jsph.pl/random.json';
+	req.responseType = 'json';
+	req.open('GET', url, true);
+	req.onload  = function() {
+	let res = req.response;
+		document.getElementById("randomFact").innerHTML = res.text;
+	};
+	req.send(null);
+}
 
 //objects
 var phone = {

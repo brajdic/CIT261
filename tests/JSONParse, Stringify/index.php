@@ -36,4 +36,4 @@ document.getElementById("demo").innerHTML = strJSON; <p class = "comment">//prin
 </div>
 
 </div><br>
-<?php include("./view/footer.php"); ?>
+<?php include("view/footer.php"); ?>

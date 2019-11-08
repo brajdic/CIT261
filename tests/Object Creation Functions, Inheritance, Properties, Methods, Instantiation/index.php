@@ -61,6 +61,4 @@ class Manager extends Employee { <br>
 
 
 </div>
-<?php
-	include("../view/footer.php");
-?>
+<?php include("view/footer.php"); ?>

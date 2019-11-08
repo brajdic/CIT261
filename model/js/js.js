@@ -85,7 +85,7 @@ function testCatFact() {
 
 function testRandomFact() {
 	let req = new XMLHttpRequest();
-	let url = 'https://uselessfacts.jsph.pl/random.json';
+	let url = 'http://emma.wtf/facts/randomFact';
 	req.responseType = 'json';
 	req.open('GET', url, true);
 	req.onload  = function() {

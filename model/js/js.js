@@ -23,7 +23,17 @@ function mouseOverTest() { document.getElementById("mouseOver").innerHTML = "<b 
 function keyDownTest() { document.getElementById("keyDown").innerHTML = "<b class = 'red'>Key pressed!</b>";}
 function touchStartTest() {document.getElementById("touchStart").innerHTML = "<b class = 'red'>Touch started!</b>";}
 function touchEndTest() {document.getElementById("touchEnd").innerHTML = "<b class = 'red'>Touch ended!</b>";}
-function onLoadFunctions() { timer(2, 0); }
+function onLoadFunctions() { 
+	try {
+		timer(2, 0);  
+	} catch(err) {
+		//
+	}
+	try {
+		testUniqueIP();
+	} catch {
+	}
+}
 function flagTest() {
 	var keyframe = document.getElementById("flag");
 	keyframe.style.animation = "animeKeyframe 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState
@@ -89,11 +99,29 @@ function testRandomFact() {
 	req.responseType = 'json';
 	req.open('GET', url, true);
 	req.onload  = function() {
-	let res = req.response;
+		let res = req.response;
 		document.getElementById("randomFact").innerHTML = res.text;
 	};
 	req.send(null);
 }
+function testUniqueIP() {
+	if (typeof(Storage) !== "undefined") { //check to make sure storeage works with browser.
+		if(localStorage.IP) {
+			document.getElementById("IP").innerHTML = "<code> Your IP address is: <b>" + localStorage.getItem("IP") + " </b><p class='comment'>//unique to each visitor and only stored locally</p>" + "</code>"; //retrieve 
+			localStorage.counter++;
+		} else {
+			localStorage.setItem("IP", getIP()); //store IP (this took about 2 hours of research / implementation)
+			localStorage.setItem("counter", 0); //store visit count
+		}
+	} else 
+		document.getElementById("IP").innerHTML = "Sorry, your browser does not support Web Storage...";
+	if(localStorage.counter == 0)
+		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you're visiting this page for the <b>first</b> time. <br>Refresh your browser to increment the counter</code><br>";
+	else
+		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you've visited this page <b>" + localStorage.counter + "</b> time(s).</code><br>";
+}
+function getIP() { return(document.getElementById("test").getAttribute('value')); }
+
 
 //objects
 var phone = {

@@ -35,6 +35,10 @@ switch($action) {
 	case 'XMLHTTPRequest to Consume a JSON Web Service':
 		include("tests/XMLHTTPRequest to Consume a JSON Web Service/index.php");
 		break;
+	case 'Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects':
+		include("tests/Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects/index.php");
+		break;	
+		
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

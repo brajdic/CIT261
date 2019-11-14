@@ -38,7 +38,9 @@ switch($action) {
 	case 'Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects':
 		include("tests/Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects/index.php");
 		break;	
-		
+	case 'DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.':
+		include("tests/DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc./index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

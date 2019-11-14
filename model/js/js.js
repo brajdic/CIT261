@@ -116,13 +116,27 @@ function testUniqueIP() {
 	} else 
 		document.getElementById("IP").innerHTML = "Sorry, your browser does not support Web Storage...";
 	if(localStorage.counter == 0)
-		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you're visiting this page for the <b>first</b> time. <br>Refresh your browser to increment the counter</code><br>";
+		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you're visiting this page for the <b>first</b> time.<p class='comment'> //Refresh your browser to increment the counter</p></code><br>";
 	else
-		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you've visited this page <b>" + localStorage.counter + "</b> time(s).</code><br>";
+		document.getElementById("testUniqueIP").innerHTML = "<code> According to local storage, you've visited this page <b>" + localStorage.counter + "</b> time(s). <p class='comment'>//Refresh your browser to increment the counter</p></code><br>";
 }
 function getIP() { return(document.getElementById("test").getAttribute('value')); }
+function createVideo() {
+	var video = document.createElement("video"); //this creates the video element.
+	if (video.canPlayType("video/mp4")) //checks to make sure the video is supported by the browser
+		video.setAttribute("src","/cit261/videos/hikarunara.mp4");
+	else
+		video.setAttribute("src","/cit261/videos/hikarunara.ogg");
+	video.setAttribute("width", "480"); //sets the width
+	video.setAttribute("height", "270"); //sets the height
+	video.setAttribute("controls", "controls"); //sets the video to be controllable
+	document.getElementById("testCreateVideo").appendChild(video); //Appends the video to the specified element (video)
+}
 
-
+function testRemoveVideo() {
+	var video = document.getElementById("testCreateVideo");
+	video.removeChild(video.childNodes[0]);
+}
 //objects
 var phone = {
 	type: "mobile",

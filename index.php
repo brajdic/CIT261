@@ -41,6 +41,9 @@ switch($action) {
 	case 'DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.':
 		include("tests/DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc./index.php");
 		break;
+	case 'Manipulating CSS Class Properties Using JavaScript':
+		include("tests/Manipulating CSS Class Properties Using JavaScript/index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

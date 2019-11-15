@@ -137,6 +137,15 @@ function testRemoveVideo() {
 	var video = document.getElementById("testCreateVideo");
 	video.removeChild(video.childNodes[0]);
 }
+function testCenterTextAlign() { document.getElementById("nav").style.textAlign  = "center";  }
+function testRightTextAlign() { document.getElementById("nav").style.textAlign = "right"; }
+function testLeftTextAlign() { document.getElementById("nav").style.textAlign = "left"; }
+function testRemoveBg() {
+	var bg = document.styleSheets[0].cssRules[3].style;
+	var removedvalue = bg.removeProperty("background"); 
+  }
+
+
 //objects
 var phone = {
 	type: "mobile",

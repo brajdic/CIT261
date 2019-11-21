@@ -158,7 +158,11 @@ p.comment {
 }
 
 @keyframes animeKeyframeBackwards2 {
-	100%{background-color:red;border-radius:0 0 0 0;left:0px;top:0px;}	
+	100%{background-color:green;border-radius:0 0 0 0;left:0px;top:0px;}
+	75%{background-color:red;border-radius:0 50% 0 0;left:21.25px;top:6.25px;}
+	50%{background-color:blue;border-radius:0 50% 50% 0;left:42.5px;top:12.25px;}
+	25% {background-color:yellow;border-radius:0 50% 50% 50%;left:63.75px;top:18.75:}
+	0% {background-color:green;border-radius:50% 50% 50% 50%;left:90px;top:25px;}	
 }
 
 #flag2 {

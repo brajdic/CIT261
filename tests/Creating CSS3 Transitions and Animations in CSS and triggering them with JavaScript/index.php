@@ -11,7 +11,7 @@ Hover to start the Transition.<br><br>
 <div id="flag2" onMouseOver="transitionTest();"></div><br><br>
 
 <h4>Animation and Transition</h4>
-Hover to see both.<br><br>
+Hover to see both animation and transition.<br><br>
 
 <div id="flag3" onMouseOver="bothTest();"><br><br><br><br><br><br><br><br><br><br><br><br>
 	<div id="flag4"></div>

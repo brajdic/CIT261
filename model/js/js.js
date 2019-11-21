@@ -41,6 +41,9 @@ function endAnimation() {
 	this.style.animation = "animeKeyframeBackwards 3s, linear, 0, 1, normal, forwards";
 	document.getElementById("info").innerHTML = "animationend event: The animation is now over.";
 }
+function endAnimation2() {
+	this.style.animation = "animeKeyframeBackwards2 3s, linear, 0, 1, normal, forwards";
+}
 function flagTest() {
 	var keyframe = document.getElementById("flag");
 	keyframe.style.animation = "animeKeyframe 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState
@@ -50,7 +53,7 @@ function flagTest() {
 function flagTest2() {
 	var keyframe = document.getElementById("flag4");
 	keyframe.style.animation = "animeKeyframe2 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState	
-	keyframe.addEventListener("animationend", endAnimation);
+	keyframe.addEventListener("animationend", endAnimation2);
 }
 function transitionTest() {
 	document.getElementById("flag2").style.transition = "all 2s"; // Standard syntax

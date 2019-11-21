@@ -47,6 +47,15 @@ switch($action) {
 	case 'Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript':
 		include("tests/Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript/index.php");
 		break;	
+	case 'Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)':
+		include("tests/Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries (Thought Library)/index.php");
+		break;
+	case 'Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries (Thought Library)':
+		include("tests/Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries (Thought Library)/index.php");
+		break;
+	case 'Designing, Defining, and Triggering CSS3 Animations without Custom Libraries (Thought Library)':
+		include("tests/Designing, Defining, and Triggering CSS3 Animations without Custom Libraries (Thought Library)/index.php");
+		break;
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

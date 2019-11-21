@@ -44,6 +44,9 @@ switch($action) {
 	case 'Manipulating CSS Class Properties Using JavaScript':
 		include("tests/Manipulating CSS Class Properties Using JavaScript/index.php");
 		break;
+	case 'Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript':
+		include("tests/Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript/index.php");
+		break;	
 	default:
 		include("view/catfacts.php");
 		include("view/fluency.php");

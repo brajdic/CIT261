@@ -140,15 +140,25 @@ p.comment {
 	50%{background-color:green;border-radius:0 50% 50% 0;left:42.5px;top:12.25px;}
 	75% {background-color:blue;border-radius:0 50% 50% 50%;left:63.75px;top:18.75:}
 	100% {background-color:red;border-radius:50% 50% 50% 50%;left:90px;top:25px;}
-	
 }
 @keyframes animeKeyframeBackwards {
 	100%{background-color:red;border-radius:0 0 0 0;left:0px;top:0px;}
 	75%{background-color:yellow;border-radius:0 50% 0 0;left:21.25px;top:6.25px;}
 	50%{background-color:green;border-radius:0 50% 50% 0;left:42.5px;top:12.25px;}
 	25% {background-color:blue;border-radius:0 50% 50% 50%;left:63.75px;top:18.75:}
-	0% {background-color:red;border-radius:50% 50% 50% 50%;left:90px;top:25px;}
-	
+	0% {background-color:red;border-radius:50% 50% 50% 50%;left:90px;top:25px;}	
+}
+
+@keyframes animeKeyframe2 {
+	0%{background-color:green;border-radius:0 0 0 0;left:0px;top:0px;}
+	25%{background-color:red;border-radius:0 50% 0 0;left:21.25px;top:6.25px;}
+	50%{background-color:blue;border-radius:0 50% 50% 0;left:42.5px;top:12.25px;}
+	75% {background-color:yellow;border-radius:0 50% 50% 50%;left:63.75px;top:18.75:}
+	100% {background-color:green;border-radius:50% 50% 50% 50%;left:90px;top:25px;}
+}
+
+@keyframes animeKeyframeBackwards2 {
+	100%{background-color:red;border-radius:0 0 0 0;left:0px;top:0px;}	
 }
 
 #flag2 {
@@ -161,9 +171,38 @@ p.comment {
 	top:0px;
 	transition: background-color 2s;
 }
+#flag3 {
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	border-radius:0 0 0 0;
+	left:0px;
+	top:0px;
+	transition: background-color 2s;
+}
+
+#flag4 {
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	border-radius:0 0 0 0;
+	left:0px;
+	top:0px;
+	transition: background-color 2s;
+}
 
 #flag2:hover {
 	background-color: #202225;
+	border-radius: 50% 50% 50% 50%;
+	left: 90px;
+	top: 25px;
+	position: relative;
+}
+
+#flag3:hover {
+	background-color: green;
 	border-radius: 50% 50% 50% 50%;
 	left: 90px;
 	top: 25px;

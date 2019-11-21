@@ -34,12 +34,6 @@ function onLoadFunctions() {
 	} catch {
 	}
 }
-function flagTest() {
-	var keyframe = document.getElementById("flag");
-	keyframe.style.animation = "animeKeyframe 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState
-	keyframe.addEventListener("animationstart", startAnimation);
-	keyframe.addEventListener("animationend", endAnimation);
-}
 function startAnimation() {
 	document.getElementById("info").innerHTML = "animationstart event: The animation is now showing.";
 }
@@ -47,9 +41,25 @@ function endAnimation() {
 	this.style.animation = "animeKeyframeBackwards 3s, linear, 0, 1, normal, forwards";
 	document.getElementById("info").innerHTML = "animationend event: The animation is now over.";
 }
-function transitionTest() {
-	document.getElementById("flag2").style.transition = "all 2s";     // Standard syntax
+function flagTest() {
+	var keyframe = document.getElementById("flag");
+	keyframe.style.animation = "animeKeyframe 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState
+	keyframe.addEventListener("animationstart", startAnimation);
+	keyframe.addEventListener("animationend", endAnimation);
 }
+function flagTest2() {
+	var keyframe = document.getElementById("flag4");
+	keyframe.style.animation = "animeKeyframe2 3s, linear, 0, 1, normal, forwards"; //name duration timingFunction delay iterationCount direction fillMode playState	
+	keyframe.addEventListener("animationend", endAnimation);
+}
+function transitionTest() {
+	document.getElementById("flag2").style.transition = "all 2s"; // Standard syntax
+}
+function bothTest() {
+	document.getElementById("flag3").style.transition = "all 2s"; // Standard syntax
+	flagTest2();
+}
+
 function timer(minutes, seconds) {
 	var time = document.getElementById("time");
 	var timeout;

@@ -241,11 +241,38 @@ p.comment {
   }
   .transition2:hover {
 	background-color: #202225;
-	border-radius: 50% 50% 50% 50%;
 	left: 90px;
 	top: 25px;
 	position: relative;
 	transition-property: background-color, left, top, border-radius;
+  }
+  .transform1 {
+	text-align: center;
+    background-color: #202225;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	left:0px;
+	top:0px;
+  }
+  .transform2:hover {
+	transform: skewX(20deg);
+  }
+  .transform1:hover {
+	background-color: #202225;
+	left: 90px;
+	top: 25px;
+	position: relative;
+	transform: rotate(180deg);
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  .transformVideo {
+	width: 480px;
+	height: 270px;
+  }
+  .transformVideo:active {
+	transform: rotate(180deg);
   }
 
 
